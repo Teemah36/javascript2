@@ -9,8 +9,49 @@ const tables = {
     height: 0.7,
 }
 
-console.log(tables.isFoldable);
+
+const fan = {
+    color: 'black',
+    type: 'standing',
+    isFoldable: 'false',
+    noOfBlades: 3,
+    adjustableHeight: true
+}
+
+
+const television = {}
+television ['type'] = 'flatscreen';
+television ['size'] = 55;
+television ['color'] = 'silver';
+television ['make'] = 'startimes';
+
+
+
+// console.log(tables.isFoldable);
+
+
 tables['colorOfLegs'] = 'grey';
 tables['width'] = 1.2
  
 console.log(tables.colorOfLegs + ' ' + tables.material + ' ' + tables.width)
+
+
+for (item in tables) {
+    console.log(tables[item])
+}
+
+
+console.log('\n\n')
+
+
+for (properties in fan) {
+    console.log(fan[properties]);
+}
+
+console.log('\n\n')
+
+for (item in television) {
+    console.log(television[item]); 
+    // to get the keys we say 
+    // console.log(item)
+}
