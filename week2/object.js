@@ -33,25 +33,36 @@ television ['make'] = 'startimes';
 tables['colorOfLegs'] = 'grey';
 tables['width'] = 1.2
  
-console.log(tables.colorOfLegs + ' ' + tables.material + ' ' + tables.width)
+// console.log(tables.colorOfLegs + ' ' + tables.material + ' ' + tables.width)
+
+const allObjects = {}
 
 
 for (item in tables) {
     console.log(tables[item])
+    allObjects[item] = tables[item];
 }
 
-
+console.log(allObjects)
 console.log('\n\n')
 
 
 for (properties in fan) {
     console.log(fan[properties]);
+    allObjects[properties] = fan[properties];
 }
 
 console.log('\n\n')
 
 for (item in television) {
-    console.log(television[item]); 
+    console.log(television[item]);
+    allObjects[item] = television[item]; 
+    
     // to get the keys we say 
     // console.log(item)
 }
+
+console.log(allObjects)
+
+
+
